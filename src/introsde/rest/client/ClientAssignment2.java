@@ -868,7 +868,5 @@ public class ClientAssignment2 {
 		if (resp.getStatus() == 200 && size > 0)
 			result = true;
 		request = "person?measureType=" + measure_type + "&max=" + max + "&min=" + min;
-
 	}
-
 }
