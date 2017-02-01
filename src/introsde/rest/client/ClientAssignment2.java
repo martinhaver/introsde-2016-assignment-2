@@ -151,7 +151,7 @@ public class ClientAssignment2 {
 	}
 
 	private static URI getBaseURI() {
-		return UriBuilder.fromUri("https://fathomless-lowlands-81350.herokuapp.com/sdelab").build();
+		return UriBuilder.fromUri("https://morning-atoll-15198.herokuapp.com/sdelab").build();
 	}
 
 	private static void printResult() throws TransformerException {
