@@ -270,7 +270,7 @@ public class ClientAssignment2 {
 		content = MediaType.APPLICATION_XML;
 		result = false;
 
-		String newName = "Dexter";
+		String newName = "John Galt";
 		String requestBody = "<person><firstname>" + newName + "</firstname></person>";
 		resp = service.path(request).request().accept(type).put(Entity.entity(requestBody, content));
 		xml = resp.readEntity(String.class);
@@ -294,10 +294,10 @@ public class ClientAssignment2 {
 		result = false;
 		String newperson_id = "";
 
-		String requestBody = "<person>" + "<firstname>Chuck</firstname>" + "<lastname>Norris</lastname>"
-				+ "<birthdate>01/01/1945</birthdate>" + "<healthprofile>"
-				+ "<measureType><measure>weight</measure><value>78.9</value></measureType>"
-				+ "<measureType><measure>height</measure><value>172</value></measureType>"
+		String requestBody = "<person>" + "<firstname>John</firstname>" + "<lastname>Galt</lastname>"
+				+ "<birthdate>01/01/1899</birthdate>" + "<healthprofile>"
+				+ "<measureType><measure>weight</measure><value>90</value></measureType>"
+				+ "<measureType><measure>height</measure><value>190</value></measureType>"
 				+ "</healthprofile></person>";
 
 		resp = service.path(request).request().accept(type).post(Entity.entity(requestBody, content));
@@ -447,7 +447,7 @@ public class ClientAssignment2 {
 		content = MediaType.APPLICATION_XML;
 		result = false;
 		request = "person/" + first_id + "/" + measure_type;
-		String requestBody = "<measureType><value>72</value></measureType>";
+		String requestBody = "<measureType><value>90</value></measureType>";
 
 		Response this_resp = service.path(request).request().accept(type).post(Entity.entity(requestBody, content));
 		String this_xml = this_resp.readEntity(String.class);
@@ -612,7 +612,7 @@ public class ClientAssignment2 {
 		content = MediaType.APPLICATION_JSON;
 		result = false;
 
-		String newName = "Jon";
+		String newName = "John";
 		String requestBody = "{\"firstname\": \"" + newName + "\"}";
 
 		resp = service.path(request).request().accept(type).put(Entity.entity(requestBody, content));
@@ -634,9 +634,9 @@ public class ClientAssignment2 {
 		result = false;
 		String newperson_id = "";
 
-		String requestBody = "{" + "\"firstname\": \"Chuck\"," + "\"lastname\":\"Norris\","
-				+ "\"birthdate\":\"01/01/1945\"," + "\"measureType\":[" + "{\"measure\":\"weight\",\"value\":\"78.9\"},"
-				+ "{\"measure\":\"height\",\"value\":\"172\"}]" + "}";
+		String requestBody = "{" + "\"firstname\": \"John\"," + "\"lastname\":\"Galt\","
+				+ "\"birthdate\":\"01/01/1990\"," + "\"measureType\":[" + "{\"measure\":\"weight\",\"value\":\"90\"},"
+				+ "{\"measure\":\"height\",\"value\":\"190\"}]" + "}";
 
 		resp = service.path(request).request().accept(type).post(Entity.entity(requestBody, content));
 		json = resp.readEntity(String.class);

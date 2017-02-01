@@ -4,41 +4,41 @@ Request #1: GET /person Accept: application/json
 [ {
   "idPerson" : 1,
   "firstname" : "Dexter",
-  "lastname" : "Norris",
+  "lastname" : "Stelar",
   "birthdate" : "31/12/1944",
-  "username" : "chuck.norris",
-  "email" : "chuck.norris@gmail.com",
+  "username" : "stelr",
+  "email" : "random.email@gmail.com",
   "measureType" : [ {
-    "value" : "70",
-    "measure" : "weight"
+    "value" : "1.78",
+    "measure" : "height"
+  }, {
+    "value" : "8988",
+    "measure" : "steps"
   }, {
     "value" : "72",
     "measure" : "height"
   } ]
 }, {
   "idPerson" : 2,
-  "firstname" : "Pallino",
-  "lastname" : "Pinco",
+  "firstname" : "Martin",
+  "lastname" : "Haver",
   "birthdate" : "16/07/1964",
-  "username" : "pallino.panco",
-  "email" : "pallino.panco@gmail.com",
+  "username" : "martin",
+  "email" : "random.email@gmail.com",
   "measureType" : [ {
-    "value" : "83",
+    "value" : "100",
     "measure" : "weight"
   }, {
     "value" : "1.65",
     "measure" : "height"
-  }, {
-    "value" : "120",
-    "measure" : "blood pressure"
   } ]
 }, {
   "idPerson" : 3,
-  "firstname" : "Ciro",
-  "lastname" : "Espo",
+  "firstname" : "George",
+  "lastname" : "Michael",
   "birthdate" : "08/12/1959",
-  "username" : "pippo",
-  "email" : "ciro.esposito@gmail.com",
+  "username" : "georg",
+  "email" : "random.email@gmail.com",
   "measureType" : [ {
     "value" : "84",
     "measure" : "weight"
@@ -48,59 +48,86 @@ Request #1: GET /person Accept: application/json
   } ]
 }, {
   "idPerson" : 4,
-  "firstname" : "Nardo",
-  "lastname" : "Avario",
+  "firstname" : "Bon",
+  "lastname" : "Jovi",
   "birthdate" : "09/11/1993",
-  "username" : "sara",
-  "email" : "nava@gmail.com",
+  "username" : "bon",
+  "email" : "random.email@gmail.com",
   "measureType" : [ {
-    "value" : "57",
-    "measure" : "weight"
-  }, {
     "value" : "1.62",
     "measure" : "height"
   } ]
 }, {
   "idPerson" : 5,
-  "firstname" : "Franca",
-  "lastname" : "polita",
+  "firstname" : "Alain",
+  "lastname" : "Delon",
   "birthdate" : "19/10/1985",
-  "username" : "poli",
-  "email" : "gg@gmail.com",
+  "username" : "aldel",
+  "email" : "random.email@gmail.com",
   "measureType" : [ {
     "value" : "94",
     "measure" : "weight"
-  }, {
-    "value" : "1.90",
-    "measure" : "height"
   } ]
 }, {
   "idPerson" : 6,
-  "firstname" : "Paolo",
-  "lastname" : "Benini",
+  "firstname" : "Matteo",
+  "lastname" : "Renzi",
   "birthdate" : "31/12/1979",
-  "username" : "beno",
-  "email" : "pbeno@gmail.com",
+  "username" : "mat",
+  "email" : "random.email@gmail.com",
   "measureType" : [ {
-    "value" : "1.79",
-    "measure" : "height"
+    "value" : "57",
+    "measure" : "weight"
   }, {
     "value" : "72",
     "measure" : "weight"
   } ]
 }, {
   "idPerson" : 7,
-  "firstname" : "Alessio",
-  "lastname" : "Spallino",
+  "firstname" : "Gabe",
+  "lastname" : "Dog",
   "birthdate" : "31/12/1979",
-  "username" : "NULL",
-  "email" : "a.s@gmail.com",
+  "username" : "gab",
+  "email" : "random.email@gmail.com",
   "measureType" : [ {
-    "value" : "1.69",
+    "value" : "1.99",
     "measure" : "height"
   }, {
-    "value" : "69",
+    "value" : "74",
     "measure" : "weight"
+  } ]
+}, {
+  "idPerson" : 8,
+  "firstname" : "C3",
+  "lastname" : "PO",
+  "birthdate" : "19/10/1985",
+  "username" : "C3",
+  "email" : "random.email@gmail.com",
+  "measureType" : [ {
+    "value" : "1.79",
+    "measure" : "height"
+  } ]
+}, {
+  "idPerson" : 9,
+  "firstname" : "R2",
+  "lastname" : "D2",
+  "birthdate" : "31/12/1944",
+  "username" : "R2",
+  "email" : "random.email@gmail.com",
+  "measureType" : [ {
+    "value" : "1.90",
+    "measure" : "height"
+  } ]
+}, {
+  "idPerson" : 10,
+  "firstname" : "Master",
+  "lastname" : "Yoda",
+  "birthdate" : "08/12/1959",
+  "username" : "yoda",
+  "email" : "random.email@gmail.com",
+  "measureType" : [ {
+    "value" : "120",
+    "measure" : "blood pressure"
   } ]
 } ]
 Request #2: GET /person/1 Accept: application/json
@@ -109,13 +136,16 @@ Request #2: GET /person/1 Accept: application/json
 {
   "idPerson" : 1,
   "firstname" : "Dexter",
-  "lastname" : "Norris",
+  "lastname" : "Stelar",
   "birthdate" : "31/12/1944",
-  "username" : "chuck.norris",
-  "email" : "chuck.norris@gmail.com",
+  "username" : "stelr",
+  "email" : "random.email@gmail.com",
   "measureType" : [ {
-    "value" : "70",
-    "measure" : "weight"
+    "value" : "1.78",
+    "measure" : "height"
+  }, {
+    "value" : "8988",
+    "measure" : "steps"
   }, {
     "value" : "72",
     "measure" : "height"
@@ -127,13 +157,16 @@ Request #3: PUT /person/1 Accept: application/json Content-Type:  application/js
 {
   "idPerson" : 1,
   "firstname" : "Jon",
-  "lastname" : "Norris",
+  "lastname" : "Stelar",
   "birthdate" : "31/12/1944",
-  "username" : "chuck.norris",
-  "email" : "chuck.norris@gmail.com",
+  "username" : "stelr",
+  "email" : "random.email@gmail.com",
   "measureType" : [ {
-    "value" : "70",
-    "measure" : "weight"
+    "value" : "1.78",
+    "measure" : "height"
+  }, {
+    "value" : "8988",
+    "measure" : "steps"
   }, {
     "value" : "72",
     "measure" : "height"
@@ -143,7 +176,7 @@ Request #4: POST /person Accept: application/json Content-Type:  application/jso
 => Result: OK
 => HTTP Status: 200
 {
-  "idPerson" : 2656,
+  "idPerson" : 2659,
   "firstname" : "Chuck",
   "lastname" : "Norris",
   "birthdate" : "01/01/1945",
@@ -157,7 +190,7 @@ Request #4: POST /person Accept: application/json Content-Type:  application/jso
     "measure" : "height"
   } ]
 }
-Request #5: DELETE /person/2656 Accept: application/json
+Request #5: DELETE /person/2659 Accept: application/json
 => Result: OK
 => HTTP Status: 204
 null
@@ -185,90 +218,30 @@ Request #7: GET /person/1/height Accept: application/json
   "measureDefinition" : {
     "value" : "height"
   },
-  "mid" : 2,
-  "created" : "2016-11-15T23:00:00.000Z"
+  "mid" : 4,
+  "created" : "2015-07-06T22:00:00.000Z"
+}, {
+  "value" : "72",
+  "measureDefinition" : {
+    "value" : "height"
+  },
+  "mid" : 16,
+  "created" : "2015-07-06T22:00:00.000Z"
 }, {
   "value" : "1.73",
   "measureDefinition" : {
     "value" : "height"
   },
-  "mid" : 1354,
+  "mid" : 17,
   "created" : "2015-07-06T22:00:00.000Z"
 }, {
-  "value" : "72",
-  "measureDefinition" : {
-    "value" : "height"
-  },
-  "mid" : 1355,
-  "created" : "2015-07-06T22:00:00.000Z"
-}, {
-  "value" : "72",
-  "measureDefinition" : {
-    "value" : "height"
-  },
-  "mid" : 1406
-}, {
-  "value" : "72",
-  "measureDefinition" : {
-    "value" : "height"
-  },
-  "mid" : 1407
-}, {
-  "value" : "72",
-  "measureDefinition" : {
-    "value" : "height"
-  },
-  "mid" : 1456
-}, {
-  "value" : "72",
-  "measureDefinition" : {
-    "value" : "height"
-  },
-  "mid" : 1457
-}, {
-  "value" : "72",
-  "measureDefinition" : {
-    "value" : "height"
-  },
-  "mid" : 1506
-}, {
-  "value" : "72",
-  "measureDefinition" : {
-    "value" : "height"
-  },
-  "mid" : 1507
-}, {
-  "value" : "72",
-  "measureDefinition" : {
-    "value" : "height"
-  },
-  "mid" : 1556
-}, {
-  "value" : "72",
-  "measureDefinition" : {
-    "value" : "height"
-  },
-  "mid" : 1557
-}, {
-  "value" : "72",
-  "measureDefinition" : {
-    "value" : "height"
-  },
-  "mid" : 1606
-}, {
-  "value" : "72",
-  "measureDefinition" : {
-    "value" : "height"
-  },
-  "mid" : 1607
-}, {
-  "value" : "72",
+  "value" : "70",
   "measureDefinition" : {
     "value" : "height"
   },
   "mid" : 1656
 } ]
-Request #8: GET /person/1/height/2 Accept: application/json
+Request #8: GET /person/1/height/4 Accept: application/json
 => Result: OK
 => HTTP Status: 200
 {
@@ -276,8 +249,8 @@ Request #8: GET /person/1/height/2 Accept: application/json
   "measureDefinition" : {
     "value" : "height"
   },
-  "mid" : 2,
-  "created" : "2016-11-15T23:00:00.000Z"
+  "mid" : 4,
+  "created" : "2015-07-06T22:00:00.000Z"
 }
 Request #9: POST /person/1/height Accept: application/json Content-Type:  application/json
 => Result: OK
@@ -286,7 +259,7 @@ Request #9: POST /person/1/height Accept: application/json Content-Type:  applic
   "value" : "72",
   "measure" : "height"
 }
-Request #10: PUT /person/1/height/2 Accept: application/json Content-Type:  application/json
+Request #10: PUT /person/1/height/4 Accept: application/json Content-Type:  application/json
 => Result: OK
 => HTTP Status: 200
 {
@@ -294,21 +267,28 @@ Request #10: PUT /person/1/height/2 Accept: application/json Content-Type:  appl
   "measureDefinition" : {
     "value" : "height"
   },
-  "mid" : 2,
-  "created" : "2016-11-15T23:00:00.000Z"
+  "mid" : 4,
+  "created" : "2015-07-06T22:00:00.000Z"
 }
 Request #11: GET /person/1/weight?before=20-11-2016&after=10-11-1990 Accept: application/json
 => Result: OK
 => HTTP Status: 200
 [ {
-  "value" : "83",
+  "value" : "90",
   "measureDefinition" : {
     "value" : "weight"
   },
   "mid" : 1,
   "created" : "2016-11-15T23:00:00.000Z"
 }, {
-  "value" : "75",
+  "value" : "85",
+  "measureDefinition" : {
+    "value" : "weight"
+  },
+  "mid" : 2,
+  "created" : "2016-11-15T23:00:00.000Z"
+}, {
+  "value" : "80",
   "measureDefinition" : {
     "value" : "weight"
   },
@@ -320,16 +300,13 @@ Request #12: GET /person?measureType=weight&max=95&min=85 Accept: application/js
 => HTTP Status: 200
 [ {
   "idPerson" : 5,
-  "firstname" : "Franca",
-  "lastname" : "polita",
+  "firstname" : "Alain",
+  "lastname" : "Delon",
   "birthdate" : "19/10/1985",
-  "username" : "poli",
-  "email" : "gg@gmail.com",
+  "username" : "aldel",
+  "email" : "random.email@gmail.com",
   "measureType" : [ {
     "value" : "94",
     "measure" : "weight"
-  }, {
-    "value" : "1.90",
-    "measure" : "height"
   } ]
 } ]
